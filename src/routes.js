@@ -6,12 +6,18 @@ import Home from './pages/Home';
 import Sobre from './pages/Sobre';
 import Contato from './pages/Contato';
 
+import Header from './components/header';
+// estamos importando o header no componente das rotas para podermos herdar as nevegações por páginas
+
 // componente de roteamento
 
 function RoutesApp() {
     return (
         // componente das nossas rotas
         <BrowserRouter>
+
+        {/* carrega o nosso header em todas as páginas. Ele vai ficar fixo */}
+        <Header/>
         {/* aqui dentro vamos colocar as rotas */}
         <Routes>
             {/* aqui dentro eu coloca qual vai ser a rota da nossa aplicação */}

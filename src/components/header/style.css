@@ -1,0 +1,23 @@
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #121212;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+/* estamos acessando os Links por meio da tag a */
+header a {
+    color: #fff;
+    font-size: 20px;
+}
+
+/* eu vou acessar a tag a e todos as outras tags a */
+/* fora o primeiro elemento a, ele aplica a margin nos outros elementos */
+header a + a {
+    margin-left: 10px;
+}
