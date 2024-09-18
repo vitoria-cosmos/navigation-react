@@ -12,6 +12,11 @@ function Home() {
             <Link to='/sobre'>Sobre</Link>
             <br/>
             <Link to='/contato'>Contato</Link>
+
+            <hr/>
+
+            {/* aqui podemos acessar a rota do produto com o id 123 */}
+            <Link to='/produto/123'>Acessar Produto 123</Link>
         </div>
     )
 }
